@@ -31,7 +31,7 @@ target create $_TARGETNAME cortex_m -endian $_ENDIAN -chain-position $_TARGETNAM
 
 $_TARGETNAME configure -work-area-phys 0x10001000 -work-area-size $_WORKAREASIZE -work-area-backup 0
 
-adapter_khz 500
+adapter_khz 5000
 adapter_nsrst_delay 100
 
 if {![using_hla]} {
